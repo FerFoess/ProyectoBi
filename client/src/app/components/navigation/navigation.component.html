@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row">
+    <!-- Barra de navegación vertical -->
+    <nav class="col-md-2 col-lg-2 bg-light sidebar">
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="navbar-brand mb-4" routerLink="/">Biblioteca</a>
+        </li>
+        <!-- Sección de Multas -->
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/multas/add" routerLinkActive="active">Multas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/books/add" routerLinkActive="active">Libros</a>
+        </li>
+        <!-- Sección de Préstamos -->
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/prestamos/add" routerLinkActive="active">Prestamos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/usuarios/add" routerLinkActive="active">Usuarios</a>
+        </li>
+      </ul>
+    </nav>
+    
+    <!-- Contenido dinámico en el área principal -->
+    <div class="col-md-10 col-lg-10">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
+

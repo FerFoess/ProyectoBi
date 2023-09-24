@@ -1,0 +1,24 @@
+
+    .sidebar {
+      width: fit-content;
+      min-width: 200px;
+      background-color: #f8f9fa;
+      padding-top: 20px; /* Espacio encima de los enlaces */
+      padding-bottom: 20px; /* Espacio debajo de los enlaces */
+    }
+
+    .nav-link {
+      font-weight: bold;
+      color: #343a40;
+      transition: color 0.3s ease-in-out; /* Efecto de transición de color */
+    }
+
+    .nav-link:hover {
+      color: #007bff; /* Cambio de color al poner el ratón encima */
+    }
+
+    /* Eliminar resaltado azul al hacer clic */
+    .nav-link.active {
+      background-color: transparent;
+    }
+ 
