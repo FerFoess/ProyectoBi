@@ -1,13 +1,12 @@
 CREATE DATABASE biblioteca;
 USE biblioteca;
 
-CREATE TABLE Usuario (
-    IdUsuario INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    Nombre VARCHAR(50),
-    Correo VARCHAR(80),
-    FechaNac DATETIME,
-    Direccion VARCHAR(100),
-    Telefono VARCHAR(50)
+CREATE TABLE USUARIOS (
+  idUsuario INT AUTO_INCREMENT PRIMARY KEY,
+  nombre VARCHAR(50) NOT NULL,
+  correo VARCHAR(100) NOT NULL,
+  contraseña VARCHAR(100) NOT NULL,
+  telefono INT NOT NULL
 );
 
 CREATE TABLE Book (
